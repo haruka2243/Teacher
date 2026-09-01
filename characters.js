@@ -1,6 +1,6 @@
 const characters = [
-    ["髙橋先生", "髙橋先生"],
-    ["増田先生", "増田先生"]
+    ["髙橋先生", "髙橋先生.png"],
+    ["増田先生", "増田先生.png"]
 ];
 
 const gallery = document.getElementById("gallery");
