@@ -1,4 +1,4 @@
-const characters = [
+const teachers = [
     ["髙橋先生", "髙橋先生.png"],
     ["増田先生", "増田先生.png"],
     ["エイメス", "エイメス.webp"]
@@ -6,18 +6,15 @@ const characters = [
 
 const gallery = document.getElementById("gallery");
 
-characters.forEach(character => {
+teachers.forEach(teacher => {
 
-    const name = character[0];
-    const image = character[1];
+    const name = teacher[0];
+    const image = teacher[1];
 
-    const card = document.createElement("div");
-    card.className = "card";
-
-    card.innerHTML = `
-        <img src="${image}" alt="${name}">
-        <div class="name">${name}</div>
+    gallery.innerHTML += `
+        <div class="card">
+            <img src="${image}" alt="${name}">
+            <div class="name">${name}</div>
+        </div>
     `;
-
-    gallery.appendChild(card);
 });
