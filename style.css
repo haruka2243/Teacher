@@ -1,3 +1,4 @@
+/* ページ全体 */
 body{
     background:#111;
     color:white;
@@ -5,10 +6,18 @@ body{
     margin:20px;
 }
 
+/* タイトル */
 h1{
     text-align:center;
 }
 
+h2{
+    width:100%;
+    text-align:center;
+    margin-top:40px;
+}
+
+/* キャラクター一覧 */
 .gallery{
     display:flex;
     flex-wrap:wrap;
@@ -16,6 +25,7 @@ h1{
     gap:20px;
 }
 
+/* キャラクターカード */
 .card{
     width:180px;
     background:#222;
@@ -25,10 +35,12 @@ h1{
     transition:0.3s;
 }
 
+/* カードにマウスを乗せたとき */
 .card:hover{
     transform:scale(1.05);
 }
 
+/* キャラクター画像 */
 .card img{
     width:160px;
     height:220px;
@@ -36,8 +48,15 @@ h1{
     border-radius:8px;
 }
 
+/* キャラクター名 */
 .name{
     margin-top:10px;
     font-size:18px;
     font-weight:bold;
+}
+
+.section-title{
+    width:100%;
+    text-align:center;
+    margin-top:40px;
 }
