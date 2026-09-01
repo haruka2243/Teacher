@@ -11,12 +11,6 @@ h1{
     text-align:center;
 }
 
-h2{
-    width:100%;
-    text-align:center;
-    margin-top:40px;
-}
-
 /* キャラクター一覧 */
 .gallery{
     display:flex;
