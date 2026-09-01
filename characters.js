@@ -25,11 +25,21 @@ teachers.forEach(teacher => {
 
     const name = teacher[0];
     const image = teacher[1];
+    const detail = teacher[2];
 
     gallery.innerHTML += `
-        <div class="card">
+        <div class="card" onclick="showDetail('${name}', '${image}', '${detail}')">
             <img src="${image}" alt="${name}">
             <div class="name">${name}</div>
         </div>
     `;
 });
+
+function showDetail(name, image, detail){
+
+    document.getElementById("detail").innerHTML = `
+        <h2>${name}</h2>
+        <img src="${image}" alt="${name}">
+        <p>${detail}</p>
+    `;
+}
