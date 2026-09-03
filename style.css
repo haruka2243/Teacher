@@ -19,12 +19,6 @@ h1{
     font-size:28px;
 }
 
-#detail img{
-    width:200px;
-    height:260px;
-    object-fit:cover;
-}
-
 #detail p{
     font-size:18px;
 }
@@ -50,14 +44,6 @@ h1{
 /* カードにマウスを乗せたとき */
 .card:hover{
     transform:scale(1.05);
-}
-
-/* 先生の画像 */
-.card img{
-    width:160px;
-    height:220px;
-    object-fit:cover;
-    border-radius:8px;
 }
 
 /* 先生の名前 */
