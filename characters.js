@@ -19,7 +19,7 @@ const teachers = [
     ["西尾先生", "英語の先生　女子バレー部の先生"],
     ["砂本先生", "物理の先生　教務部の担当"],
     ["山下先生", "男子サッカー部顧問"],
-    ["山科先生", "女子サッカー部顧問　保険体育の先生"],
+    ["山科先生", "女子サッカー部顧問　保健体育の先生"],
     ["池田先生", "音楽の先生　吹奏楽部の顧問"],
     ["嶋田先生", "理科の先生　吹奏楽部顧問"],
     ["水島先生", "少林寺の先生"],
@@ -46,10 +46,23 @@ teachers.forEach(teacher => {
     `;
 });
 
-function showDetail(name, detail){
 
-    document.getElementById("detail").innerHTML = `
+function showDetail(card, name, detail){
+
+    const detailArea = document.getElementById("detail");
+
+    // すでに同じ先生の詳細が表示されていたら消す
+    if(detailArea.dataset.teacher === name){
+        detailArea.innerHTML = "";
+        detailArea.dataset.teacher = "";
+        return;
+    }
+
+    // 詳細を表示
+    detailArea.innerHTML = `
         <h2>${name}</h2>
         <p>${detail}</p>
     `;
+
+    detailArea.dataset.teacher = name;
 }
