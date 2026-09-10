@@ -40,12 +40,11 @@ teachers.forEach(teacher => {
     const detail = teacher[1];
 
     gallery.innerHTML += `
-        <div class="card" onclick="showDetail('${name}', '${detail}')">
+        <div class="card" onclick="showDetail(this, '${name}', '${detail}')">
             <div class="name">${name}</div>
         </div>
     `;
 });
-
 
 function showDetail(card, name, detail){
 
