@@ -35,12 +35,13 @@ const teachers = [
 const gallery = document.getElementById("gallery");
 
 teachers.forEach(teacher => {
-
     const name = teacher[0];
-    const detail = teacher[1];
+    const reading = teacher[1];
+    const detail = teacher[2];
 
     gallery.innerHTML += `
         <div class="card" onclick="showDetail(this, '${name}', '${detail}')">
+            <div class="reading">${reading}</div>
             <div class="name">${name}</div>
         </div>
     `;
